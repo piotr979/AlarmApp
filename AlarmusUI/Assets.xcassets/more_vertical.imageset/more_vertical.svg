@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu / more_vertical</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-/-more_vertical">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="menu-/-more_vertical-(Background/Mask)"></g>
+            <path d="M14,6 C14,4.89999998 13.0999999,4 12,4 C10.9,4 10,4.89999998 10,6 C10,7.0999999 10.9,8 12,8 C13.0999999,8 14,7.0999999 14,6 Z M10,12 C10,13.1000004 10.9,14 12,14 C13.0999999,14 14,13.1000004 14,12 C14,10.9000001 13.0999999,10 12,10 C10.9,10 10,10.9000001 10,12 Z M12,16 C13.0999999,16 14,16.8999996 14,18 C14,19.1000004 13.0999999,20 12,20 C10.9,20 10,19.1000004 10,18 C10,16.8999996 10.9,16 12,16 Z" fill="#FFFFFF" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
