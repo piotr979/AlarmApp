@@ -23,7 +23,9 @@ struct SettingsView: View {
     @AppStorage("alarmMission") var alarmMission:Int = 0
     
     @State private var soundNumber: Int = UserDefaults.standard.integer(forKey: SettingsKeys.selectedSound.description)
-      
+    init(){
+           UITableView.appearance().backgroundColor = .clear
+       }
     var body: some View {
         NavigationView {
             GeometryReader { geo in
@@ -61,6 +63,8 @@ struct SettingsView: View {
                             } //: NAVIGATION LINK
                         } //: SECTION
                    } //: FORM
+                    
+                    .frame(maxWidth: geo.size.width > 700 ? geo.size.width / 1.4 : geo.size.width, alignment: .center)
                  VStack {
                         Spacer()
                         Text(" This app was created by Piotr Glaza 2021")

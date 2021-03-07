@@ -40,17 +40,8 @@ struct AlarmTabView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     VStack {
-
                         VStack(spacing: 5) {
-                            Button( action: {
-                                notificationCenter.isTouched = true
-                            }) {
-                          
-                                Text("Click me")
-                                    .foregroundColor(.white)
-                            }
-                             
-                            Text("Next alarm")
+                             Text("Next alarm")
                                 .font(.custom("NHaasGroteskTXPro-65Md", size: 20))
                                 .foregroundColor(.white)
                             if let alarmHour = localNotification.alarmTimer.hour, let alarmMinute = localNotification.alarmTimer.minute {

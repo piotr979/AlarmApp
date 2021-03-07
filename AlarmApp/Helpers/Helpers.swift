@@ -13,18 +13,13 @@ enum AlarmStatus {
 }
 class Helpers {
     
-
-   
-    
-    // SINGLETON DEFINITION
-    // HERE
     static let shared = Helpers()
-    
-    var alarmStatus: AlarmStatus = .alarmOff 
+    var alarmStatus: AlarmStatus = .alarmOff
     
     func formatAlarmUnitForDisplay(_ unit: Int) ->String {
         return unit < 10 ? "0\(unit)" : "\(unit)"
     }
+    
     func processPickerTime(_ value: Date) ->(Int,Int) {
         
         let mns = Calendar.current.component(.minute, from: value)
@@ -85,8 +80,6 @@ class Helpers {
             
             // 4. We have: alarms convert to Int and today time To Int. Time to find closest alarm
             if let alarmUuid = findNextAlarm(uuidWithTime: alarmsForTodayFuture) {
-                print("Found alarm for today is \(alarmUuid)")
-                
                 guard let alarmFound = alarms.first(where: { $0.id == alarmUuid }) else { return nil }
                 let timeLeft = calcTimeLeftTillAlarm(currentTimeInt: currentTimeIntegered, alarm: alarmFound, daysAhead: 0)
                 return (alarmUuid, today, hourLeft: timeLeft.hourLeft, minuteLeft: timeLeft.minuteLeft, daysLeft: timeLeft.daysLeft)
@@ -112,7 +105,6 @@ class Helpers {
             
             x += 1
          }
-        print("Our list for inspection is \(tempListOfDaysToCheck)")
         for (index,day) in tempListOfDaysToCheck.enumerated() {
             if let alarmsForSpecificDay = tryToFindAlarmForSpecificDay(alarms: alarmsSwitchedOn, day: day) {
                 
@@ -124,7 +116,6 @@ class Helpers {
                 case 1:
                     let timeLeft = calcTimeLeftTillAlarm(currentTimeInt: currentTimeIntegered, alarm: alarmsForSpecificDay[0], daysAhead: index + 1)
                     //return (alarmUuid, today, hourLeft: timeLeft.hourLeft, minuteLeft: timeLeft.minuteLeft, daysLeft: timeLeft.daysLeft)
-                    print("case 1 \(alarmsForSpecificDay.count)")
                     return (alarmId: alarmsForSpecificDay[0].id, day: day, hourLeft: timeLeft.hourLeft, minuteLeft: timeLeft.minuteLeft, daysLeft: timeLeft.daysLeft)
                 default:
                     // find now the closest time
@@ -133,7 +124,6 @@ class Helpers {
                     let alarmsConvertedToInt = convertAlarmsTimeToInt(alarms: alarmsForSpecificDay)
                     // 4. We have: alarms convert to Int and today time To Int. Time to find closest alarm
                     if let alarmUuid = findNextAlarm(uuidWithTime: alarmsConvertedToInt) {
-                        print("Found alarm is \(alarmUuid)")
                         let timeLeft = calcTimeLeftTillAlarm(currentTimeInt: currentTimeIntegered, alarm: alarmsForSpecificDay[0], daysAhead: index + 1)
                         return (alarmId: alarmsForSpecificDay[0].id, day: day, hourLeft: timeLeft.hourLeft, minuteLeft: timeLeft.minuteLeft, daysLeft: timeLeft.daysLeft)
                         // TODO: return alarm with UUID
@@ -155,14 +145,12 @@ class Helpers {
         // natomiast dzien to day
         
         //find alarm
-        print("Days left \(daysAhead)")
         let alarmTimeWithoutDaysToInt = (convertTimeToNumber(hour: alarm.hour, minute: alarm.minute))
         let daysToNextAlarm = MINUTES24HOURS * (daysAhead)
         
         // we have days and hours of next alarm converted to Int
         let alarmConvertedToInt = alarmTimeWithoutDaysToInt + daysToNextAlarm
         
-        print(alarmConvertedToInt)
         let timeLeftInt = alarmConvertedToInt - currentTimeInt
         
         // let say is left 3200 minutes
@@ -198,9 +186,6 @@ class Helpers {
        
         
         let closestAlarmIntegered = uuidWithTime.min { a,b in a.value < b.value }
-        print("The closest alarm is \(closestAlarmIntegered)")
-        
-    
        
         // 7. we dont need to convert time, just find the alarm by ID in our alarm files
         
@@ -223,13 +208,10 @@ class Helpers {
 //    }
     func doesAlarmExistForDay(day: Int, alarms:  [Alarm]) ->Alarm? {
         for alarm in alarms {
-            print("Checking alarm \(alarm)")
             if alarm.days[day] == true {
                 return alarm
             }
-           
         }
         return nil
     }
-   
 }

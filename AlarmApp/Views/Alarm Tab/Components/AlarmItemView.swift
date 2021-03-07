@@ -97,12 +97,12 @@ struct AlarmItemView: View {
                             Image("more_vertical")
                                 .contextMenu {
                                     
-                                    // -------------------- EDIT ALARM - MICRO MENU
-                                    Button {
-                                        // change country setting
-                                    } label: {
-                                        Label("Edit alarm", systemImage: "pencil")
-                                    }
+                                    // -------------------- EDIT/DELETE ALARM - MICRO MENU
+//                                    Button {
+//                                        // change country setting
+//                                    } label: {
+//                                        Label("Edit alarm", systemImage: "pencil")
+//                                    }
                                     
                                     Button(action: {
                                         // ----------------- DELETE ALARM - MICRO MENU
@@ -120,7 +120,7 @@ struct AlarmItemView: View {
                     .background(Color.itemBackground)
                     .opacity(rectState ? 1 : 0.7)
                     .cornerRadius(20)
-                    .frame(maxWidth: geo.size.width > 500 ? geo.size.width / 1.4 : geo.size.width, alignment: .center)
+                    .frame(maxWidth: geo.size.width > 700 ? geo.size.width / 1.4 : geo.size.width, alignment: .center)
             } // ZSTACK - this extra ZStack centers items on page
             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
         } // GEO

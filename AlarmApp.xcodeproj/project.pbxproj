@@ -39,7 +39,6 @@
 		C9D43E8F25811B6C00CEA187 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D43E8E25811B6C00CEA187 /* NotificationCenter.swift */; };
 		C9D43E9225811F1100CEA187 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D43E9125811F1100CEA187 /* LocalNotification.swift */; };
 		C9E36C5525DBD0CA0016D8DA /* AlarmItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E36C5325DBD0CA0016D8DA /* AlarmItemView.swift */; };
-		C9E36C5625DBD0CA0016D8DA /* OverlayMiniMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E36C5425DBD0CA0016D8DA /* OverlayMiniMenu.swift */; };
 		C9E36C5D25DBE1C00016D8DA /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E36C5C25DBE1C00016D8DA /* ViewModifiers.swift */; };
 		C9E36C5F25DBE2910016D8DA /* NHaasGroteskTX-Pro-75Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E36C5825DBE1360016D8DA /* NHaasGroteskTX-Pro-75Bold.ttf */; };
 		C9E36C6125DBE2930016D8DA /* NHaasGroteskTXPro-55Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E36C5925DBE1360016D8DA /* NHaasGroteskTXPro-55Rg.ttf */; };
@@ -49,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		C90147DD25EFD12500CFB82A /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
-		C91904D62573F52400F9FA9A /* AlarmusUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmusUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91904D62573F52400F9FA9A /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91904D92573F52400F9FA9A /* AlarmusUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmusUIApp.swift; sourceTree = "<group>"; };
 		C91904DB2573F52400F9FA9A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		C91904DD2573F52500F9FA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,7 +81,6 @@
 		C9D43E8E25811B6C00CEA187 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		C9D43E9125811F1100CEA187 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		C9E36C5325DBD0CA0016D8DA /* AlarmItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmItemView.swift; sourceTree = "<group>"; };
-		C9E36C5425DBD0CA0016D8DA /* OverlayMiniMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayMiniMenu.swift; sourceTree = "<group>"; };
 		C9E36C5825DBE1360016D8DA /* NHaasGroteskTX-Pro-75Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NHaasGroteskTX-Pro-75Bold.ttf"; sourceTree = "<group>"; };
 		C9E36C5925DBE1360016D8DA /* NHaasGroteskTXPro-55Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NHaasGroteskTXPro-55Rg.ttf"; sourceTree = "<group>"; };
 		C9E36C5A25DBE1360016D8DA /* NHaasGroteskTXPro-65Md.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NHaasGroteskTXPro-65Md.ttf"; sourceTree = "<group>"; };
@@ -107,7 +105,7 @@
 			children = (
 				C957D9E725A9B75100D520CF /* AlarmData+CoreDataClass.swift */,
 				C957D9E825A9B75100D520CF /* AlarmData+CoreDataProperties.swift */,
-				C91904D82573F52400F9FA9A /* AlarmusUI */,
+				C91904D82573F52400F9FA9A /* AlarmApp */,
 				C91904D72573F52400F9FA9A /* Products */,
 				C9D0A59725A0C7CF009F4D3A /* Frameworks */,
 			);
@@ -116,12 +114,12 @@
 		C91904D72573F52400F9FA9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C91904D62573F52400F9FA9A /* AlarmusUI.app */,
+				C91904D62573F52400F9FA9A /* AlarmApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C91904D82573F52400F9FA9A /* AlarmusUI */ = {
+		C91904D82573F52400F9FA9A /* AlarmApp */ = {
 			isa = PBXGroup;
 			children = (
 				C93CFE2F2599142400957030 /* Data */,
@@ -134,7 +132,7 @@
 				C91904E22573F52500F9FA9A /* Info.plist */,
 				C91904DF2573F52500F9FA9A /* Preview Content */,
 			);
-			path = AlarmusUI;
+			path = AlarmApp;
 			sourceTree = "<group>";
 		};
 		C91904DF2573F52500F9FA9A /* Preview Content */ = {
@@ -172,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				C9E36C5325DBD0CA0016D8DA /* AlarmItemView.swift */,
-				C9E36C5425DBD0CA0016D8DA /* OverlayMiniMenu.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -295,9 +292,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C91904D52573F52400F9FA9A /* AlarmusUI */ = {
+		C91904D52573F52400F9FA9A /* AlarmApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C91904E52573F52500F9FA9A /* Build configuration list for PBXNativeTarget "AlarmusUI" */;
+			buildConfigurationList = C91904E52573F52500F9FA9A /* Build configuration list for PBXNativeTarget "AlarmApp" */;
 			buildPhases = (
 				C91904D22573F52400F9FA9A /* Sources */,
 				C91904D32573F52400F9FA9A /* Frameworks */,
@@ -307,11 +304,11 @@
 			);
 			dependencies = (
 			);
-			name = AlarmusUI;
+			name = AlarmApp;
 			packageProductDependencies = (
 			);
 			productName = AlarmusUI;
-			productReference = C91904D62573F52400F9FA9A /* AlarmusUI.app */;
+			productReference = C91904D62573F52400F9FA9A /* AlarmApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -328,7 +325,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C91904D12573F52400F9FA9A /* Build configuration list for PBXProject "AlarmusUI" */;
+			buildConfigurationList = C91904D12573F52400F9FA9A /* Build configuration list for PBXProject "AlarmApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -343,7 +340,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C91904D52573F52400F9FA9A /* AlarmusUI */,
+				C91904D52573F52400F9FA9A /* AlarmApp */,
 			);
 		};
 /* End PBXProject section */
@@ -378,7 +375,6 @@
 				C9A90D7925A437E300108B8E /* SoundsListView.swift in Sources */,
 				C9E36C5525DBD0CA0016D8DA /* AlarmItemView.swift in Sources */,
 				C9D43E8F25811B6C00CEA187 /* NotificationCenter.swift in Sources */,
-				C9E36C5625DBD0CA0016D8DA /* OverlayMiniMenu.swift in Sources */,
 				C9E42A9F2583DC7400495247 /* FullScreenModalView.swift in Sources */,
 				C93971D425A9AB4F00561FE6 /* CoreDataPersistence.swift in Sources */,
 				C97A6B6C25A457FA00700BA1 /* DataModel.xcdatamodeld in Sources */,
@@ -528,10 +524,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AlarmusUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AlarmApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 93SC7DB8DP;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AlarmusUI/Info.plist;
+				INFOPLIST_FILE = AlarmApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,10 +546,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AlarmusUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AlarmApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 93SC7DB8DP;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AlarmusUI/Info.plist;
+				INFOPLIST_FILE = AlarmApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +565,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C91904D12573F52400F9FA9A /* Build configuration list for PBXProject "AlarmusUI" */ = {
+		C91904D12573F52400F9FA9A /* Build configuration list for PBXProject "AlarmApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C91904E32573F52500F9FA9A /* Debug */,
@@ -578,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C91904E52573F52500F9FA9A /* Build configuration list for PBXNativeTarget "AlarmusUI" */ = {
+		C91904E52573F52500F9FA9A /* Build configuration list for PBXNativeTarget "AlarmApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C91904E62573F52500F9FA9A /* Debug */,
